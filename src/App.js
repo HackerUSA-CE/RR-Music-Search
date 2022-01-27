@@ -1,6 +1,6 @@
 import {useEffect, useState } from 'react'
 import Gallery from './components/Gallery'
-import Searchbar from './components/Searchbar'
+import SearchBar from './components/SearchBar'
 
 function App() {
 	let [search, setSearch] = useState('')
@@ -32,7 +32,7 @@ function App() {
 
 	return (
 		<div>
-			<Searchbar handleSearch = {handleSearch}/>
+			<SearchBar handleSearch = {handleSearch}/>
 			{message}
 			<Gallery data={data} />
 		</div>
