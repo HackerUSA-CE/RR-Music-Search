@@ -2,7 +2,7 @@ import {useEffect, useState, useRef } from 'react'
 import Gallery from './components/Gallery'
 import SearchBar from './components/SearchBar'
 import { DataContext } from './context/DataContext'
-import { SearchContext } from '.context/SearchContext'
+import { SearchContext } from './context/SearchContext'
 
 function App() {
 	let [search, setSearch] = useState('')
@@ -39,7 +39,7 @@ function App() {
 				term: searchInput,
 				handleSearch: handleSearch
 			}}>
-				<Searchbar />
+				<SearchBar />
 			</SearchContext.Provider>
 			{message}
 			<DataContext.Provider value={data}>
