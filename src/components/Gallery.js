@@ -1,4 +1,3 @@
-// Gallery.js
 import GalleryItem from './GalleryItem'
 
 function Gallery(props){

@@ -1,4 +1,3 @@
-// GalleryItem.js
 import { useState } from 'react' 
 
 function GalleryItem(props){
