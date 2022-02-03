@@ -1,70 +1,39 @@
-# Getting Started with Create React App
+# Title of Activity
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This activity is part of React & Redux. Reference the activity guide found in React Dataflow to complete the activity. There is no starter for this code-along series.
 
-## Available Scripts
+## Branches
+main - Solution, this branch is the completed code for the fourth code-along activity  
 
-In the project directory, you can run:
+part1 - This branch is the completed code for the first code-along activity 
 
-### `npm start`
+part2 - This branch is the completed code for the second code-along activity
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+part3 - This branch is the completed code for the third code-along activity
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+part4 - Solution, this branch is the completed code for the fourth code-along activity
 
-### `npm test`
+## Getting Started
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Fork this repository.
+2. Open your terminal.
+3. Navigate to the location where you want the cloned directory.
+4. Clone the forked repository with the git clone command.
+5. Open the cloned repository in your code editor of choice.
+6. Switch to the appropriate branch.
 
-### `npm run build`
+## Submission
+Please submit the activity through canvas.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+***
+## Creating Your Own README.md
+If you are hosting your 'completed' version of this activity on your personal Github account, make sure to include the following:
+* A summary of the project
+* A link to a live sample of the activity
+* Technologies used to complete the project
+* A note that it was completed as part of your course curriculum
+* Instructions on how to get the project started for viewing locally
+* Optional: a list of features or bugs you would like to add or address
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+***
+CE Note: This activity can be found in 7.3.2, 7.3.3, 7.3.5, 7.3.6, and 7.3.10
