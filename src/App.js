@@ -1,4 +1,4 @@
-import {useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import Gallery from './components/Gallery'
 import SearchBar from './components/SearchBar'
 
@@ -16,9 +16,9 @@ function App() {
 				const response = await fetch(API_URL + search)
 				const resData = await response.json()
 				if (resData.results.length > 0) {
-					setData(resData.results)
+					return setData(resData.results)
 				} else {
-					setMessage('Not Found')
+					return setMessage('Not Found')
 				}
 			}
 			fetchData()
