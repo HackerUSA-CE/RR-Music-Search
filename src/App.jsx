@@ -13,13 +13,14 @@ function App() {
   useEffect(() => {
     if (searchTerm) {
       document.title = `${searchTerm} Music`;
-      console.log(fetchData(searchTerm));
+     // console.log(fetchData(searchTerm));
       setData(fetchData(searchTerm));
     }
   }, [searchTerm]);
 
   const handleSearch = (e, term) => {
     e.preventDefault();
+    console.log(term);
     setSearchTerm(term);
   };
 
