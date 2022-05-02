@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { SearchContext } from "../context/SearchContext";
 
-const SearchBar = () => {
+const SearchBar = (props) => {
   const  [term, setTerm] = useState('');
-  console.log(term)
+
   return (
     <form onSubmit={(e) => props.handleSearch(e, term)}>
       <input onChange ={(e) =>setTerm(e.target.value)}  type="text" placeholder="Search Here" />
