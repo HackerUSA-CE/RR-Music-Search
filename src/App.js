@@ -1,7 +1,10 @@
-import {useEffect, useState } from 'react'
+import { Fragment, useEffect, useState } from 'react'
 import Gallery from './components/Gallery'
 import Searchbar from './components/Searchbar'
 import { DataContext } from './context/DataContext'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import AlbumView from './components/AlbumView'
+import ArtistView from './components/ArtistView'
 
 function App() {
 	let [search, setSearch] = useState('')
@@ -11,7 +14,7 @@ function App() {
 	const API_URL = 'https://itunes.apple.com/search?term='
 
 	useEffect(() => {
-		if(search) {
+		if (search) {
 			const fetchData = async () => {
 				document.title = `${search} Music`
 				const response = await fetch(API_URL + search)
@@ -25,7 +28,7 @@ function App() {
 			fetchData()
 		}
 	}, [search])
-	
+
 	const handleSearch = (e, term) => {
 		e.preventDefault()
 		setSearch(term)
@@ -33,13 +36,26 @@ function App() {
 
 	return (
 		<div>
-			<Searchbar handleSearch = {handleSearch}/>
+			<Searchbar handleSearch={handleSearch} />
 			{message}
 			<DataContext.Provider value={data}>
-				<Gallery />
+
+				<Router>
+					<Routes>
+						<Route path='/' element={
+							<Fragment>
+
+								<Gallery data={data} />
+							</Fragment>
+
+						} />
+						<Route path='/album/:id' element={<AlbumView />} />
+						<Route path='/artist/:id' element={<ArtistView />} />
+					</Routes>
+				</Router>
 			</DataContext.Provider>
 		</div>
-  	);
+	);
 }
 
 export default App;
