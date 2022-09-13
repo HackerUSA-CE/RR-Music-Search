@@ -11,7 +11,7 @@ function SeachBar(props) {
                 (e) => setSearchTerm(e.target.value)
             }/>
 
-            <input type="submit" />
+            <input type="submit" value="clear"/>
 
         </form>
     )

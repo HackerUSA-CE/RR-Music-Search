@@ -1,6 +1,6 @@
 import {useEffect, useState } from 'react'
 import Gallery from './components/Gallery'
-import SearchBar from './components/SearchBar'
+import SearchBar from './components/Searchbar'
 import { DataContext } from './context/DataContext'
 
 function App() {
@@ -29,10 +29,17 @@ function App() {
 	const handleSearch = (e, term) => {
 		e.preventDefault()
 		setSearch(term)
-	}
+	};
+
+	const clearResults = () => {
+		setSearch('');
+		setMessage('Search for music!');
+		setData([]);
+	};
 
 	return (
-		<div>
+		<div className= 'app'>
+			<button onClick={ () => clearResults()}>Clear</button>
 			<SearchBar handleSearch = {handleSearch}/>
 			{message}
 			<DataContext.Provider value={data}>
