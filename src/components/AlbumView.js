@@ -1,3 +1,5 @@
+// These components will be making separate API calls from the app
+// component to serve specific data about a given album
 import { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 
@@ -14,10 +16,8 @@ function AlbumView() {
             console.log(songs)
             setAlbumData(songs)
         }
-
-        
         fetchData()
-    })
+    }, [id])
 
     const display = albumData && albumData.map(song => {
         return (
@@ -33,6 +33,5 @@ function AlbumView() {
         </div>
     )
 }
-
 
 export default AlbumView
