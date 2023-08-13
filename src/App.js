@@ -17,13 +17,24 @@ function App() {
     if (search) {
       const fetchData = async () => {
         document.title = `${search} Music`;
-        const response = await fetch(API_URL + search);
-        const resData = await response.json();
-        if (resData.results.length > 0) {
-          return setData(resData.results);
-        } else {
-          return setMessage("Not Found");
-        }
+        console.log("before fetch")
+        // const response = await fetch(API_URL + search);
+        await fetch(API_URL + search, {
+          mode: "no-cors",
+        })
+          .then((res) => {
+            console.log(res);
+          })
+          .catch((err) => {
+            console.log(err);
+          });
+         console.log("after fetch");
+        // const resData = await response.json();
+        // if (resData.results.length > 0) {
+        //   return setData(resData.results);
+        // } else {
+        //   return setMessage("Not Found");
+        // }
       };
       fetchData();
     }
