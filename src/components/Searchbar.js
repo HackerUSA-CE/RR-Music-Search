@@ -17,4 +17,4 @@ function SeachBar(props) {
     )
 }
 
-export default SeachBar
+export default SeachBar;
