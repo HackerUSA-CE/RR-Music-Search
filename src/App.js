@@ -4,6 +4,7 @@ import Gallery from "./components/Gallery";
 import SearchBar from "./components/SearchBar";
 import AlbumView from "./components/AlbumView";
 import ArtistView from "./components/ArtistView";
+import SuspenseEx from "./components/Suspense";
 import { Fragment } from "react/cjs/react.production.min";
 
 function App() {
@@ -45,6 +46,7 @@ function App() {
               <Fragment>
                 <SearchBar handleSearch={handleSearch} />
                 <Gallery data={data} />
+                <SuspenseEx />
               </Fragment>
             }
           />
