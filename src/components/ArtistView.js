@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useParams, Link, useNavigate } from "react-router-dom";
+import { useParams, useNavigate, Link } from "react-router-dom";
 
 function ArtistView() {
   const navigate = useNavigate();
@@ -33,7 +33,7 @@ function ArtistView() {
   const navButtons = () => {
     return (
       <div>
-        <button onClick={() => navigate(-1)}>Back</button>|
+        <button onClick={() => navigate(-1)}>Back</button>
         <button onClick={() => navigate("/")}>Home</button>
       </div>
     );
